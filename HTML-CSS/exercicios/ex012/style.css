@@ -1,0 +1,19 @@
+body {
+    background-color: burlywood;
+    font-size: larger;
+}
+h1 {
+    background-color: rgb(141, 111, 71);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    color: blue;
+}
+h2 {
+    background-color: rgb(180, 135, 76);
+    font-size: x-large;
+    color: lightblue
+}
+p {
+    background-color: rgb(211, 186, 153);
+    font-size: large;
+}
