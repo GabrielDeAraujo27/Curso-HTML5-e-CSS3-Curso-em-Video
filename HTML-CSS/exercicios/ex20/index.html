@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com hover e pseudoclass</title>
+    <style>
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: aqua;
+        }
+        div:hover {
+            background-color: brown;
+            height: 100px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Obedeça a instrução</h1>
+    <div>
+         <h2>Aperte o botão abaixo</h2>
+        <p>Aqui mesmo</p>
+    </div>
+</body>
+</html>
