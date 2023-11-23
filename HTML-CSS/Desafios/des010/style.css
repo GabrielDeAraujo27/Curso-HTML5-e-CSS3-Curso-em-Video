@@ -3,11 +3,72 @@
     src: url(fontes/idroid.otf);
 }
 body {
-    background-color: rgb(22, 22, 24);
+    background-color: black;
     color: whitesmoke;
     font-family: android;
 }
 img {
     border-color: azure;
     padding: 10px;
+}
+header {
+    background-color: rgb(60, 83, 25);
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+}
+header > h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+header > h2 {
+    padding-left: 20px;
+}
+menu {
+    background-color: rgb(37, 51, 16);
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+menu > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+menu > a:hover {
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 5px;
+    text-decoration: underline;
+    border-radius: 15px;
+}
+main {
+    background-color: rgb(22, 22, 24);
+    border-radius: 15px;
+    padding: 10px 35px 10px 35px;
+    box-shadow: 1px 1px 5px azure;
+}
+main > h2 {
+    padding-left: 20px ;
+    text-decoration: underline;
+}
+main > p{
+    padding: 10px;
+}
+main > iframe {
+    padding-left: 300px;
+}
+footer {
+    background-color: rgb(22, 22, 24);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px azure;
+}
+footer > p {
+    padding: 10px;
+}
+aside {
+    text-align: center;
+}
+aside > p > a {
+    text-decoration: none;
+    color: bisque;
+}
+aside > p > a:hover {
+    text-decoration: underline;
 }
