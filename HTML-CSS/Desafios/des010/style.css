@@ -14,7 +14,9 @@ img {
 header {
     background-color: rgb(60, 83, 25);
     border-radius: 0px 0px 10px 10px;
-    margin: 0px;
+    margin: -12px;
+    padding: 0px;
+    border: 0px;
 }
 header > h1 {
     text-align: center;
@@ -25,23 +27,23 @@ header > h2 {
 }
 menu {
     background-color: rgb(37, 51, 16);
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px 10px 10px 10px;
 }
 menu > a {
     color: whitesmoke;
     text-decoration: none;
+    margin: 55px;
 }
 menu > a:hover {
     background-color: rgba(0, 0, 0, 0.438);
-    padding: 5px;
     text-decoration: underline;
+    padding: 10px;
     border-radius: 15px;
 }
 main {
     background-color: rgb(22, 22, 24);
     border-radius: 15px;
-    padding: 10px 35px 10px 35px;
     box-shadow: 1px 1px 5px azure;
 }
 main > h2 {
@@ -70,5 +72,11 @@ aside > p > a {
     color: bisque;
 }
 aside > p > a:hover {
-    text-decoration: underline;
+    text-decoration: underline overline wavy;
+}
+aside > p > a:hover::before {
+    content: "|";
+}
+aside > p > a:hover::after {
+    content: "|";
 }
