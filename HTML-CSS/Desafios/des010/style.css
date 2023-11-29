@@ -21,6 +21,9 @@ img {
     border-color: azure;
     padding: 10px;
 }
+a::after {
+    content: "🔗";
+}
 header {
     background-color: var(--color01);
     border-radius: 0px 0px 10px 10px;
@@ -74,8 +77,22 @@ footer {
     border-radius: 15px;
     box-shadow: 1px 1px 5px azure;
 }
+footer > ul {
+    background-color: var(--color02);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 5%;
+    list-style-position: inside;
+    columns: 2;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px;
+}
 footer > p {
     padding: 10px;
+}
+footer > .video {
+    padding-left: 20%;
 }
 aside {
     text-align: center;
