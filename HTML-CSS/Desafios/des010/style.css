@@ -2,6 +2,16 @@
     font-family: android;
     src: url(fontes/idroid.otf);
 }
+
+:root {
+    --color01: rgb(60, 83, 25);
+    --color02: rgb(37, 51, 16);
+    --color03: rgba(0, 0, 0, 0.438);
+    --color04: rgb(22, 22, 24)
+}
+* {
+
+}
 body {
     background-color: black;
     color: whitesmoke;
@@ -12,7 +22,7 @@ img {
     padding: 10px;
 }
 header {
-    background-color: rgb(60, 83, 25);
+    background-color: var(--color01);
     border-radius: 0px 0px 10px 10px;
     margin: -12px;
     padding: 0px;
@@ -21,30 +31,33 @@ header {
 header > h1 {
     text-align: center;
     text-decoration: underline;
+    padding-top: 10px;
 }
 header > h2 {
     padding-left: 20px;
 }
 menu {
-    background-color: rgb(37, 51, 16);
+    background-color: var(--color02);
     padding: 10px;
     border-radius: 10px 10px 10px 10px;
 }
 menu > a {
     color: whitesmoke;
     text-decoration: none;
+    padding: 10px;
     margin: 55px;
 }
 menu > a:hover {
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: var(--color03);
     text-decoration: underline;
-    padding: 10px;
     border-radius: 15px;
 }
 main {
-    background-color: rgb(22, 22, 24);
+    background-color: var(--color04);
     border-radius: 15px;
     box-shadow: 1px 1px 5px azure;
+    min-width: 320px;
+    max-width: 1440px;
 }
 main > h2 {
     padding-left: 20px ;
@@ -57,7 +70,7 @@ main > iframe {
     padding-left: 300px;
 }
 footer {
-    background-color: rgb(22, 22, 24);
+    background-color: var(--color04);
     border-radius: 15px;
     box-shadow: 1px 1px 5px azure;
 }
@@ -79,4 +92,18 @@ aside > p > a:hover::before {
 }
 aside > p > a:hover::after {
     content: "|";
+}
+img {
+    position: relative;
+    left: 10%;
+    border-radius: 15px;
+    width: 80%;
+    background-color: var(--color02);
+}
+img.po {
+    width: 50%;
+}
+picture > img{
+    background-color: var(--color03);
+    
 }
