@@ -1,0 +1,67 @@
+:root {
+    --black001: rgb(18, 9, 32);
+    --white001: rgb(241, 215, 180);
+}
+
+body {
+    background-color: var(--black001);
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+header {
+    position: relative;
+    left: -5%; top: -2%;
+    padding: 0px;
+    margin: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: var(--black001);    
+}
+header > div.title {
+    text-align: center;
+    padding-top: 10px;
+    height: 50px;
+}
+header > div.title > h1 > a {
+    text-decoration: none;
+    color: var(--white001);
+}
+header > div.title > h4 > a {
+    text-decoration: none;
+    color: var(--white001);
+}
+main {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width: 102%;
+    height: 40vh;
+}
+main > p {
+    padding-left: 1%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 15%;
+    background-color: rgba(58, 54, 54, 0.336);
+    width: 30%;
+}
+#one {
+    background-image: url(imagens/background001.jpg);
+}
+#two {
+    background-image: url(imagens/background002.jpg);
+}
+.transparent {
+    color: var(--white001);
+    background-position: center center;
+}
+.black {
+    color: var(--white001);
+    background-color: var(--black001);
+}
+.white {
+    background-color: var(--white001);
+}
