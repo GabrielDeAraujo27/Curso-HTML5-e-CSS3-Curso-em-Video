@@ -40,7 +40,7 @@ header > div.title {
 header > div.title > h1 > a {
     font-family: 'Shadows Into Light', cursive;     
     font-variant: small-caps;
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--white001);
 }
 header > div.title > h4 > a {
@@ -60,20 +60,30 @@ section {
     box-shadow: 2px var(--black001);
 }
 section > p {
+    display: inline-block;
     background-color: rgba(122, 113, 95, 0.479);
     border-radius: 15px;
     padding-left: 2vw;
-    width: 30vw;
-    box-shadow: 1px rgb(18, 9, 32);
+    padding-right: 1vw;
+    margin-right: 5vw;
+    text-shadow: 1px 1px 2px var(--white001);
+    box-shadow: 5px 5px 8px var(--black001) ;
 }
 section.imagem {
     background-position: right bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: var(--white001);
-    text-shadow: 5px var(--black001);
     border-radius: 15px;
+}
+section.imagem > p {
+    text-shadow: 1px 1px 2px var(--white001);
 }
 #one {
     background-image: url(imagens/background001.jpg);
+}
+#one > p {
+    text-shadow: 1px 1px 2px var(--black001);
 }
 #two {
     background-image: url(imagens/background002.jpg);
