@@ -23,47 +23,52 @@
         .SexoIdade {
             background-color: brown;
         }
+        #container {
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Exercicio de tabelas</h1>
-    <table>
-        <colgroup>
-            <col class="Nome">
-            <col class="SexoIdade" span="2">
-            <col class="Profissão">
-        </colgroup>
-        <caption>Cadastro</caption>
-        <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Sexo</th>
-            <th scope="col">Idade</th>
-            <th scope="col">Profissão</th>
-        </tr>
-        <tr>
-            <td>Ana Maria</td>
-            <td>F</td>
-            <td>25</td>
-            <td>Jornalista</td>
-        </tr>
-        <tr>
-            <td>Claudio</td>
-            <td>M</td>
-            <td>25</td>
-            <td>Jardineiro</td>
-        </tr>
-        <tr>
-            <td>Gustavo</td>
-            <td>M</td>
-            <td>48</td>
-            <td>Desempregado</td>
-        </tr>
-        <tr>
-            <td>Lourdes</td>
-            <td>F</td>
-            <td>89</td>
-            <td>Pensionista</td>
-        </tr>
-    </table>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="Nome">
+                <col class="SexoIdade" span="2">
+                <col class="Profissão">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Claudio</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Jardineiro</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>48</td>
+                <td>Desempregado</td>
+            </tr>
+            <tr>
+                <td>Lourdes</td>
+                <td>F</td>
+                <td>89</td>
+                <td>Pensionista</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
