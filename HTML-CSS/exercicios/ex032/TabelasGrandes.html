@@ -8,14 +8,36 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background: ghostwhite;
+            border-radius: 15px;
         }
         thead, tfoot {
             background-color: gainsboro;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gainsboro;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: yellowgreen;
+            font-weight: bolder;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: chocolate;
+            font-weight: lighter;
         }
         th, td {
             border: 1px solid black;
             padding: 10px;
         }
+
         .num {
             text-align: center;
         }
@@ -25,16 +47,19 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         Anatomia
-        THead
-            tr, td, th
-        TBody
-            tr, td, th
-        TFoot
-            tr, td, th
+        Table
+            Caption
+            THead
+                tr, td, th
+            TBody
+                tr, td, th
+            TFoot
+                tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
+            <th scope="col" style="width: 6px;">Estado</th>
             <th>População</th>
         </thead>
         <tbody>
@@ -49,6 +74,58 @@
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17K</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">Muitas</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45K</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21K</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17K</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">Muitas</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45K</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21K</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17K</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">Muitas</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45K</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21K</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17K</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">Muitas</td>
             </tr>
         </tbody>
         <tfoot>
