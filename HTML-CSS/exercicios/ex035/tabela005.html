@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+        th {
+            background-color: lightslategray;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        .Nome{
+            background-color: aquamarine;
+        }
+        .SexoIdade {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="Nome">
+            <col class="SexoIdade" span="2">
+            <col class="Profissão">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Jardineiro</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>48</td>
+            <td>Desempregado</td>
+        </tr>
+        <tr>
+            <td>Lourdes</td>
+            <td>F</td>
+            <td>89</td>
+            <td>Pensionista</td>
+        </tr>
+    </table>
+</body>
+</html>
