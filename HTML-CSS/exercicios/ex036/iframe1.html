@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de IFrame</title>
+    <style>
+        iframe {
+            height: 400px;
+            width: 400px;
+            border: 5px dashed palevioletred;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de IFrame</h1>
     <p>
         site do 
-        <iframe src="https://www.cursoemvideo.com/curso/html5-e-css3-modulo-4-de-5-vip/" frameborder="0"></iframe>
+        <!--Tamanho padrao: 300x150px
+        Preferencia por CSS-->
+        <iframe src="https://www.cursoemvideo.com/curso/html5-e-css3-modulo-4-de-5-vip/" frameborder="1" height="500px" scrolling="no">
+            <a href="https://www.cursoemvideo.com/curso/html5-e-css3-modulo-4-de-5-vip/">cursoemvideo</a>
+            seu navegador é ruim
+        </iframe>
     </p>
 </body>
 </html>
