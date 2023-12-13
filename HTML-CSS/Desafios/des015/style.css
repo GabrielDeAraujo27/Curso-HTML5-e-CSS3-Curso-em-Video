@@ -18,3 +18,18 @@ img {
     padding-left: 40px;
     width: 300px;
 }
+#icon {
+    position: absolute;
+    left: 65%;
+    width: 96px;
+    height: 96px;
+}
+.youtube {
+    top: 10%;
+}
+.twitter {
+    top: 40%;
+}
+.tiktok {
+    top: 70%;
+}
