@@ -13,6 +13,12 @@
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
         </p>
         <p>
+            <label for="imasculino">Masculino</label>
+            <input type="radio" name="sexo" id="imasculino">
+            <label for="ifeminino">Feminino</label>
+            <input type="radio" name="sexo" id="ifeminino">
+        </p>
+        <p>
             <label for="imedia">Média</label>
             <input type="number" name="media" id="imedia" required maxlength="30" placeholder="Média de notas" min="0" max="10" step="0.1">
         </p>
@@ -38,6 +44,15 @@
                 <label for="itel">Telefone</label>
                 <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="[0-9]{4}-[0-9]{4}">
             </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="esfut"> 
+            <label for="esfut">Futebol</label>
+            <input type="checkbox" name="vol" id="esvol"> Voleibol
+            <input type="checkbox" name="bas" id="esbas" checked> Basquetebol
+            <input type="checkbox" name="nat" id="esnat"> Natação
+            <input type="checkbox" name="cor" id="escor"> Corrida
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
