@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
+    <title>Formulario</title>
 </head>
 <body>
     <h1>Teste de formulario</h1>
@@ -64,6 +64,32 @@
                 <label for="ifile">Arquivo</label>
                 <input type="file" name="file" id="ifile">
             </p>
+        </fieldset>
+        <fieldset>
+            <legend>Select, Datalist and Textarea</legend>
+            <label for="iest">Estado(select)</label>
+            <select name="est" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+                
+            </select>
+            <br><br>
+            <label for="iDatalist">Datalist</label>
+            <input type="text" name="Datalist" id="iDatalist" list="lstNum">
+            <datalist id="lstNum">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+            </datalist>
+            <br>
+            <label for="itextarea">TextArea</label>
+            <textarea name="textarea" id="itextarea" cols="30" rows="10"></textarea>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
