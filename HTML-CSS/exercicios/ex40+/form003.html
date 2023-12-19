@@ -91,6 +91,17 @@
             <label for="itextarea">TextArea</label>
             <textarea name="textarea" id="itextarea" cols="30" rows="10"></textarea>
         </fieldset>
+        <fieldset>
+            <legend>Output</legend>
+            <label for="inum1">Numero 1</label>
+            <input type="number" id="inum1" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            
+            <label for="inum2">Numero 2</label>
+            <input type="number" id="inum2" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">0</output>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
